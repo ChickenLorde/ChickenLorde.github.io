@@ -1,4 +1,4 @@
-/* This makes all your paragraph text blue and larger */
+0/* This makes all your paragraph text blue and larger */
 p {
   color: blue;
   font-size: 20px;
@@ -6,5 +6,5 @@ p {
 
 /* This makes the whole website background dark gray */
 body {
-  background-color: #DDDDDD;
+  background-color: #e0e0e0;
 }
