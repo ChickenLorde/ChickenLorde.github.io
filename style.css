@@ -6,7 +6,7 @@ body {
 
 nav ul {
   display: flex;
-  justify-content: line-end;
+  justify-content: flex-end;
   list-style-type: none;
   background-color: #cccccc;
   padding: 15px;
