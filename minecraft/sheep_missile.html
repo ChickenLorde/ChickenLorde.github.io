@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Self-guided Homing Sheep Missile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://gstatic.com" crossorigin>
+      <link href="https://googleapis.com" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="navbar-placeholder"></div>
+  
+      <!-- Auto fetch navbar -->
+      <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+      </script>
+      
+       <!-- PROJECT INFO -->
+      <h1><strong>Self-Guided Homing Sheep Missile in Minecraft</strong></h1>
+        <hr>
+      
+      <div style="text-align: left;">
+        <h2>Start Date: January 2026</h2>
+        <h2>Status: Completed March 2026</h2>
+        <h2>Platform: IntelliJ</h2>
+        <h2>API: PaperMC</h2>
+        <h2>Programming Language: Java</h2>
+      </div>
+
+      <!-- CORE SYSTEMS-->
+      <h1><strong>Navigation System</strong></h1>
+      <hr>
+
+      <div style="text-align: left;">
+        <h2>Simulated Vision</h2>
+        <h2>&lt;SCREENSHOT EXPLANATION&gt;</h2>
+        <p>DESCRIPTION</p>
+
+        <br>
+        <h2>Trajectory Scoring</h2>
+        <p>DESCRIPTION</p>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
