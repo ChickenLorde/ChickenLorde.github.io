@@ -8,3 +8,17 @@ p {
 body {
   background-color: #dedede;
 }
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: #cccccc;
+  padding: 15px;
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+}
