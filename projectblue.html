@@ -17,18 +17,26 @@
 
   <body>
     <div class="page-wrapper">
-    <div id="navbar-placeholder"></div>
-
-    <!-- Auto fetch navbar -->
-    <script>
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-    </script>
-    
-    <h1><strong>Project Blue</strong></h1>
+      <div id="navbar-placeholder"></div>
+  
+      <!-- Auto fetch navbar -->
+      <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+      </script>
+      
+      <h1><strong>Project Blue</strong></h1>
+        <hr>
+      <div style="text-align: left;">
+        <h2>Start Date: December 2024</h2>
+        <h2>Status: Ongoing</h2>
+        <h2>Platform: Unity Game Engine</h2>
+        <h2>Programming Language: C#</h2>
+      </div>
+      
     </div>
   </body>
 </html>
