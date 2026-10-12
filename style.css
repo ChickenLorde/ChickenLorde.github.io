@@ -2,7 +2,7 @@
 /* This makes the whole website background dark gray */
 body {
   background-color: #dedede;
-  font-style: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
