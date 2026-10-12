@@ -13,6 +13,7 @@ nav ul {
 }
 
 nav a {
+  display: inline-block;
   color: black;
   text-decoration: none;
   margin: 0 15px;
