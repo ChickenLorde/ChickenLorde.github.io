@@ -17,6 +17,18 @@
   
   <body>
   <div class="page-wrapper">
+    <div id="navbar-placeholder"></div>
+
+    <!-- Auto fetch navbar -->
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+
+    
     <nav>
       <ul style="gap: 30px;">
         <li>HTML Basics</li>
