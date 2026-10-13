@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Magic and Dungeons</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://gstatic.com" crossorigin>
+      <link href="https://googleapis.com" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="navbar-placeholder"></div>
+  
+      <!-- Auto fetch navbar -->
+      <script>
+        fetch('/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+      </script>
+      
+       <!-- PROJECT INFO -->
+      <h1><strong>Magic and Dungeons in Minecraft</strong></h1>
+        <hr>
+      
+      <div style="text-align: left;">
+        <h3>Start Date: April 2026</h3>
+        <h3>Status: Ongoing</h3>
+        <h3>Platform: IntelliJ</h3>
+        <h3>API: PaperMC</h3>
+        <h3>Programming Language: Java</h3>
+      </div>
+
+
+      <hr>
+      <div style="text-align: left;">
+              <!-- CORE SYSTEMS-->
+        <h2><strong>Core Systems</strong></h2>
+
+        <h3>Mana System</h3>
+        <h3>&lt;SCREENSHOT EXPLANATION&gt;</h3>
+        <p>DESCRIPTION</p>
+        <br>
+
+        <h3>Magic Spells</h3>
+        <h3>&lt;SCREENSHOT EXPLANATION&gt;</h3>
+        <p>DESCRIPTION</p>
+        <br>
+
+        <h3>Accessories</h3>
+        <h3>&lt;SCREENSHOT EXPLANATION&gt;</h3>
+        <p>DESCRIPTION</p>
+        <br>
+
+        <h3>Dungeons</h3>
+        <h3>&lt;SCREENSHOT EXPLANATION&gt;</h3>
+        <p>DESCRIPTION</p>
+        <br>
+
+      
+      </div>
+
+      
+    </div>
+  </body>
+</html>
