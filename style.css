@@ -39,10 +39,24 @@ hr {
   min-height: 50px;
   resize: none;
   field-sizing: content;
-  background-color: #cfcfcf;
+  background-color: #bfbfbf;
   border-radius: 15px;
   color: #000000;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   padding: 7px 15px;
+  margin: 15px auto;
+}
+.video-showcase-box {
+  width: 100%;
+  min-height: 50px;
+  resize: none;
+  field-sizing: content;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  color: #000000;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  padding: 7px 15px;
+  margin: 15px auto;
 }
