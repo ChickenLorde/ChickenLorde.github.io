@@ -33,3 +33,16 @@ hr {
   background-color: #bbbbbb;
   width: 100%;
 }
+
+.fancy-text-box {
+  width: 100%;
+  min-height: 50px;
+  resize: none;
+  field-sizing: content;
+  background-color: #cfcfcf;
+  border-radius: 15px;
+  color: #000000;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  padding: 7px 15px;
+}
