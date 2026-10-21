@@ -26,3 +26,10 @@ nav a {
   width: 100%;
   margin: 0 auto;
 }
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: #333;
+  width: 50%;
+}
