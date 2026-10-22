@@ -38,6 +38,7 @@ hr {
   width: 100%;
   min-height: 50px;
   resize: none;
+  box-sizing: border-box;
   field-sizing: content;
   background-color: #bfbfbf;
   border-radius: 15px;
