@@ -96,7 +96,14 @@
           <h3>Procedural World Generation</h3><hr>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Nq4caSChpyE?si=nbsu4m50_W1_oHzq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="fancy-text-box">
-            <p>DESCRIPTION</p>
+            <p>
+              A seeded world generation system in my game.<br><br>
+
+              The only thing generating right now is asteroid clusters. In the future I want to add biomes, different asteroid types, enemy outposts, planets, etc.<br>
+
+              How it works is that when the player explores 50x50 unit areas called "chunks" it will load all of the data in that chunk. <br>
+              Based on the seed and a deterministic math algorithm, it decides where asteroid clusters should spawn and where the asteroids in that cluster spawn. I also added a feature to add chunk overrides which allows any changes made to chunks to persist even when they reload, such as destroying or moving an asteroid.
+            </p>
           </div>
         </div>
 
@@ -105,7 +112,13 @@
           <h3>Fleet Behavior</h3><hr>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/vbHzZnvlkxA?si=1UksTy7L-jl2ve7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="fancy-text-box">
-            <p>DESCRIPTION</p>
+            <p>
+              Fleets act like a hivemind in that a fleet gives individual ships commands to achieve goals for the entire fleet.<br><br>
+
+              It uses a priority goal system that I created where the fleet can assign ships goals to accomplish, such as flying to a destination or attacking a target. The goals give the ships the steps required to accomplish it as well as a priority. Every frame, the ship will execute the goal with the highest priority, but can store up to 2 other goals as "memory."<br><br>
+
+              One example of a fleet goal is  V-formation which assigns the ships the goal of flying to a point relative to the leader to form a V-shape.
+            </p>
           </div>
         </div>
 
@@ -114,7 +127,14 @@
           <h3>Ship Pathfinding</h3><hr>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2T0YS2lLYA?si=tgOtJ3p0wnxfT5Rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="fancy-text-box">
-            <p>DESCRIPTION</p>
+            <p>
+              This is just an A* pathfinder that I implemented in my game. It allows ships to pick from 16 directions to move in and is much smarter than the navigation system but can't update on-the-fly. This is mainly used for general path planning while the navigation system actually follows the path generated.<br><br>
+
+              Essentially, A* will explore "nodes" around it in 16 directions. It will then store those nodes in an open list which is basically "nodes that can be explored later". The algorithm will then calculate the cost of moving to each node.
+              The cost is calculated by summing 3 values, the h-cost, the g-cost and the penalties. The H-cost is the estimated distance from the node to the goal, usually calculated by the straight line distance to the goal. The G-cost is the accumulated distance from node-tonode and the penalties are decided by me. The only penalty so far is for zigzagging by checking if the node points in a completely different direction from the previous node.
+              <br><br>
+              Ultimately, A* will repeat this process until it reaches the goal, finding the most optimal path.
+            </p>
           </div>
         </div>
 
@@ -123,7 +143,11 @@
           <h3>Dynamic Navigation</h3><hr>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/6q4FKqNhJkY?si=2whktCa8b0ePryA-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="fancy-text-box">
-            <p>DESCRIPTION</p>
+            <p>
+              Every frame, ships will cast rays in every direction around itself, each ray returns how far it traveled before it hit something and what direction it's facing.<br><br>
+
+              The navigation system will then "score" each direction based on how close it points towards the destination. The score will be penalized the closer the direction would get to an object. Another penalty is for changing directions from the direction the ship is already moving in to discourage jagged flight patterns. Essentially, the ship will be pulled towards its destination while avoiding objects along the path.
+            </p>
           </div>
         </div>
 
