@@ -53,6 +53,26 @@
         z-index: 2;
         text-decoration: underline;
       }
+            /* Mobile-specific adjustments */
+      @media (max-width: 600px) {
+        .page-wrapper > ul {
+          gap: 20px !important;
+          padding: 0 12px !important;
+        }
+
+        .page-wrapper > ul > li {
+          flex-basis: 100%;
+        }
+
+        .page-wrapper > ul .project-display {
+          min-height: auto;
+        }
+
+        /* Prevent long contact information from overflowing */
+        .page-wrapper h2 {
+          overflow-wrap: anywhere;
+        }
+      }
     </style>
   </head>
 
