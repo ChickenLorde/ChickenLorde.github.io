@@ -51,6 +51,28 @@
         z-index: 2;
         text-decoration: underline;
       }
+      /* Make project cards responsive */
+      .page-wrapper > ul > li {
+        flex: 0 1 430px;
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      .project-display {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+      }
+
+      /* Make project images fit inside cards */
+      .project-display img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        aspect-ratio: 36 / 25;
+        object-fit: cover;
+      }
             /* Mobile-specific adjustments */
       @media (max-width: 600px) {
         .page-wrapper > ul {
