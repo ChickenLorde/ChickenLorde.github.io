@@ -24,14 +24,11 @@
         line-height: 1.3;
         transition: all 0.3s ease;
         cursor: pointer;
+        text-decoration: none;
       }  
 
       .project-display:hover {
         background-color: #bdbdbd;
-      }
-      a:has(.project-display) {
-        text-decoration: none;
-        color:inherit;
       }
       .project-display hr {
         background-color: #bbbbbb;
@@ -39,6 +36,19 @@
       }
       .project-display:hover hr {
         background-color: #a9a9a9;
+      }
+      .main-card-link {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .secondary-card-link {
+        position: relative;
+        z-index: 2;
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -64,18 +74,18 @@
 
     <ul style="display: flex; justify-content: center; list-style-type: none; gap: 50px; padding: 0; margin: 0; flex-wrap: wrap;">
       <li>
-        <a href="projectblue.html">
-          <div class="project-display">
-            <h2 style="text-align: center;"><strong>Project Blue</strong></h2><hr>
-            <h3 style="text-align: center;"><strong>Status: <span style="color: rgb(2, 121, 2);">Ongoing</span></strong></h3>
-            <img src="images/project_blue_thumbnail.png" alt="Thumbnail scene for Project Blue" style="width: 360px; height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto">
+        <div class="project-display">
+          <h2 style="text-align: center;"><strong>Project Blue</strong></h2><hr>
+          <h3 style="text-align: center;"><strong>Status: <span style="color: rgb(2, 121, 2);">Ongoing</span></strong></h3>
+          <img src="images/project_blue_thumbnail.png" alt="Thumbnail scene for Project Blue" style="width: 360px; height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto">
 
-            <p>An indie roguelite, survival, base-building video game started in December 2025.<br><br>
-              You are sent off into space in order to extract raw resources to sell to your company, Lone Star Corp. They believe that the best policy for maximum productivity is a lawless environment where
-              employees must fend for themselves.<br><br> Extract resources, defend your outpost, raid rival workers, and most importantly, don't forget to meet the production quota!.</p>
-            <a href="https://github.com/ChickenLorde/ProjectBlue">&#128279; GitHub Repository</a>
-          </div>
-        </a>
+          <p>An indie roguelite, survival, base-building video game started in December 2025.<br><br>
+            You are sent off into space in order to extract raw resources to sell to your company, Lone Star Corp. They believe that the best policy for maximum productivity is a lawless environment where
+            employees must fend for themselves.<br><br> Extract resources, defend your outpost, raid rival workers, and most importantly, don't forget to meet the production quota!.
+          </p>
+          <a href="projectblue.html" class="secondary-card-link"></a>
+          <a href="https://github.com/ChickenLorde/ProjectBlue" target="_blank" class="main-card-link">&#128279; GitHub Repository</a>
+        </div>
       </li>
       
       <li>
