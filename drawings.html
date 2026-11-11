@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Blue</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- Auto fetch navbar -->
+      <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+      </script>
+    </body>
+</html>
