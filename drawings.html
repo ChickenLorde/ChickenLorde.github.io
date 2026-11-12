@@ -17,18 +17,24 @@
     </head>
 
     <body>
+      <div class="page-wrapper">
+        <div id="navbar-placeholder"></div>
         <!-- Auto fetch navbar -->
-      <script>
-        fetch('navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-          });
-      </script>
+        <script>
+          fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        </script>
 
-      <div style="text-align: left;">
-        <h2><strong>ABOUT</a></h2>
-        <h3>A portfolio for my favorite drawings over the years. Chickens</h>
+        <h1><strong>Art Portfolio</strong></h1>
+        <hr>
+
+        <div style="text-align: left;">
+          <h2><strong>ABOUT</a></h2>
+          <h3>A portfolio for my favorite drawings over the years.</h>
+        </div>
       </div>
     </body>
 </html>
