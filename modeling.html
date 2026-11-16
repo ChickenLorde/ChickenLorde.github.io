@@ -1,1 +1,40 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D Modeling</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        </style>
+    </head>
+
+    <body>
+      <div class="page-wrapper">
+        <div id="navbar-placeholder"></div>
+        <!-- Auto fetch navbar -->
+        <script>
+          fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        </script>
+
+        <h1><strong>3D Modeling Portfolio</strong></h1>
+        <hr>
+
+        <div style="text-align: left;">
+          <h2><strong>ABOUT</a></h2>
+          <h3>A portfolio for my 3D models made using Blender.</h>
+        </div>
+      </div>
+    </body>
+</html>
